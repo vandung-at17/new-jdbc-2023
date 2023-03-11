@@ -18,25 +18,26 @@
 	    				${message}
 	  				</div>
 				</c:if>
-	  			<!-- <div class="alert alert-danger">
-	    			<strong>Danger!</strong> Login fail.
-	  			</div> -->
 				<div class="panel">
 					<h2>Admin Login</h2>
 					<p>Please enter your username and password</p>
 				</div>
 				<form action= "<c:url value='/dang-nhap'/>" id="Login" method="post">
 					<div class="form-group">
-						<input type="text" class="form-control" id="userName" name="userName"
+						<input type="text" class="form-control" id="userName" name="userName" value="${userName}"
 							placeholder="Tên Đăng Nhập">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" id="password" name="password"
+						<input type="password" class="form-control" id="password" name="password" value="${password}"
 							placeholder="Password">
 					</div>
 					<div class="forgot">
 						<a href="reset.html">Forgot password?</a>
 					</div>
+					<div class="form-group form-check">
+                    	<input name="remember" value="1" type="checkbox" class="form-check-input" id="exampleCheck1">
+                    	<label class="form-check-label" for="exampleCheck1">Remember me</label>
+                	</div>
 					<input type="hidden" value="login" id= "action" name= "action"/> 
 					<button type="submit" class="btn btn-primary">Đăng Nhập</button>
 				</form>

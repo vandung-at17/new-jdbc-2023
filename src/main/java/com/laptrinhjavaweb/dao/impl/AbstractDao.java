@@ -97,8 +97,6 @@ public class AbstractDao <T> implements GenericDao <T> {
 			System.out.println("Lỗi ở phần AbstractDao");
 			e.printStackTrace();
 		}
-		
-		
 	}
 
 	@Override

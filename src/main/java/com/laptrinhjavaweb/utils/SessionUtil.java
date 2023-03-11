@@ -3,7 +3,7 @@ package com.laptrinhjavaweb.utils;
 import javax.servlet.http.HttpServletRequest;
 
 public class SessionUtil {
-	
+	// dùng để lưu thông tin người dùng vào hệ thống
 	private static SessionUtil sessionUtil = null;
 	
 	public static SessionUtil getInstance () {
